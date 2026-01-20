@@ -12,7 +12,7 @@ Collection : products
 ----------------------------------------------------
 Operation 1: Load Data
 ----------------------------------------------------
-Command used (run in CMD, not here):
+
 
 mongoimport --db fleximart --collection products \
 --file products_catalog.json --jsonArray
@@ -106,3 +106,4 @@ db.products.aggregate([
   },
   { $sort: { avg_price: -1 } }
 ]);
+
